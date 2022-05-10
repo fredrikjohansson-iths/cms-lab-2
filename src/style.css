@@ -1,0 +1,166 @@
+/* GLOBAL */
+
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* GLOBAL ends */
+
+/* GRIDS */
+
+/* .container-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+.header {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.about {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.experience {
+  grid-area: 2 / 1 / 4 / 2;
+}
+.education {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.skills {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.footer {
+  grid-area: 5 / 1 / 6 / 2;
+} */
+
+.container-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title title"
+    "country phone";
+}
+
+.title {
+  grid-area: title;
+}
+
+.country {
+  grid-area: country;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "about-title about-title"
+    "about-left about-right";
+}
+
+.about-title {
+  grid-area: about-title;
+}
+.about-left {
+  grid-area: about-left;
+}
+.about-right {
+  grid-area: about-right;
+}
+
+.container-experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "experience-title experience-title"
+    "experience-left experience-right";
+}
+
+.experience-title {
+  grid-area: experience-title;
+}
+
+.experience-left {
+  grid-area: experience-left;
+}
+
+.experience-right {
+  grid-area: experience-right;
+}
+
+.container-education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "education-title education-title"
+    "education-left education-right";
+}
+
+.education-title {
+  grid-area: education-title;
+}
+
+.education-left {
+  grid-area: education-left;
+}
+
+.education-right {
+  grid-area: education-right;
+}
+
+.container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "skills-title skills-title"
+    "skills-left skills-right";
+}
+
+.skills-title {
+  grid-area: skills-title;
+}
+
+.skills-left {
+  grid-area: skills-left;
+}
+
+.skills-right {
+  grid-area: skills-right;
+}
+
+/* GRIDS end */
+
+/* ABOUT */
+.my-avatar {
+  width: 10rem;
+  height: 10rem;
+  background-image: url(https://i.imgur.com/iWWajvN.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
