@@ -1,0 +1,29 @@
+.education-item {
+    border: solid #0000000f;
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+    width: 30rem;
+    background-color: aliceblue;
+    margin-top: 1.5rem;
+  }
+  
+  .container-education-item {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "education-text education-points";
+  }
+  
+  .education-text {
+    grid-area: education-text;
+  }
+  
+  .education-points {
+    grid-area: education-points;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }

@@ -1,0 +1,49 @@
+.container-skillset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "skillset-a1 skillset-a2";
+  margin-bottom: 1rem;
+}
+.skillset-1 {
+  grid-area: skillset-a1;
+  display: flex;
+  flex-direction: column;
+}
+.skillset-2 {
+  grid-area: skillset-a2;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  width: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-item {
+  border: solid #0000000f;
+  border-radius: 0.3rem;
+  background-color: aliceblue;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.skillset {
+  margin-top: 0.5rem;
+}
+.soft-value {
+  margin-top: 0.5rem;
+}
+
+.languages {
+  margin-top: 0.5rem;
+}
+.license {
+}

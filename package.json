@@ -15,10 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.12.1",
     "gatsby": "^4.13.1",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-sharp": "^4.13.0",
-    "gatsby-source-contentful": "^7.11.0",
+    "gatsby-source-contentful": "^7.12.0",
     "gatsby-source-filesystem": "^4.13.0",
     "gatsby-transformer-sharp": "^4.13.0",
     "react": "^17.0.1",

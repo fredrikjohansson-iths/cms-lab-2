@@ -1,0 +1,8 @@
+.experience-item {
+  border: solid #0000000f;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  width: 30rem;
+  background-color: aliceblue;
+  margin-top: 1.5rem;
+}

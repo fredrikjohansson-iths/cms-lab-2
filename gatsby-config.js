@@ -1,3 +1,8 @@
+require("dotenv").config()
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `CMS Lab 2`,
@@ -6,8 +11,10 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "XkOfccMA8a3zfOoyk5EcSpli0VvHR0JAHmifKJlhI9c",
-      "spaceId": "nztrasscdxen"
+      downloadLocal: true,
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      host: process.env.CONTENTFUL_HOST,
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
