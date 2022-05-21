@@ -14,6 +14,38 @@ main {
   max-width: 900px;
 }
 
+
+article div{display: flex;flex-direction: row;}
+
+button {
+  font-size: 1.3rem;
+  border: solid #0000000f;
+  color: white;
+  border-radius: 0.3rem;
+  background-color: rgb(102, 143, 179);
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.letter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -34,7 +66,6 @@ main {
 /* GLOBAL ends */
 
 /* HEADER */
-
 
 /* GRIDS */
 

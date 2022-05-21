@@ -4,7 +4,7 @@ import Details from "./details";
 import Education from "./education";
 import Experience from "./experience";
 import Skills from "./skills";
-import Footer from "./footer";
+import Letter from "./letter";
 export default function Layout() {
   return (
     <main>
@@ -13,7 +13,7 @@ export default function Layout() {
       <Education />
       <Experience />
       <Skills />
-      <Footer />
+      <Letter />
     </main>
   );
 }

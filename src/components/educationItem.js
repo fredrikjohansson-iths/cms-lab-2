@@ -6,7 +6,7 @@ function EducationItem(props) {
   return (
     <div className="container-education-item education-item">
       <div className="education-text">
-        <p>{renderRichText(props.education.course)}</p>
+        <p>{props.education.courseName}</p>
 
         <p>{renderRichText(props.education.school)}</p>
         <p>

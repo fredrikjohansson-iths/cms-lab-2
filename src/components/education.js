@@ -9,9 +9,7 @@ const Education = (props) => {
         edges {
           node {
             id
-            course {
-              raw
-            }
+            courseName
             eduEnd
             eduStart
             school {
