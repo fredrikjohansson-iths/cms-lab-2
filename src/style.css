@@ -14,8 +14,10 @@ main {
   max-width: 900px;
 }
 
-
-article div{display: flex;flex-direction: row;}
+article div {
+  display: flex;
+  flex-direction: row;
+}
 
 button {
   font-size: 1.3rem;

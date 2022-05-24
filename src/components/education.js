@@ -21,6 +21,7 @@ const Education = (props) => {
       }
     }
   `);
+
   // console.log(data.allContentfulEducation.edges.map((edu)=>{
   //   return edu.node }))
   return (
@@ -31,11 +32,16 @@ const Education = (props) => {
       </div>
 
       {data.allContentfulEducation.edges.map((edu) => {
+        var hide = false
+        if (edu.node.points == null){
+          hide = true
+        }
         return (
           <EducationItem
             className="education-item container-education-item"
             key={edu.node.id}
             education={edu.node}
+            points={hide}
           />
         );
       })}
